@@ -1,0 +1,37 @@
+body {
+    background: #000;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.ball {
+    background: red;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    bottom: 150px;
+    left: 0;
+    border-radius: 50%;
+    border: 2px solid rgb(26, 247, 18);
+    animation: bounce 3s linear infinite , bounce1 1s  ease-out infinite alternate;
+}
+@keyframes bounce{
+    from{
+        left:0;
+    }
+    to{
+      left:100%;
+    }
+}
+@keyframes bounce1{
+    from{
+        bottom:0;
+    }
+    to{
+        bottom:50%;
+
+    }
+}
